@@ -1,0 +1,40 @@
+{% extends 'check/base.html' %}
+
+{% block content %}
+<br>
+<br>
+    <body>
+        <header>
+            <div class = "col-md-4" style="font-family: Arial, Helvetica, sans-serif;">
+                <h2>Your Result</h2>
+            </div>
+        </header>
+        <br>
+        <!-- <main role="main" class="container">
+            <div class="content-section"> -->
+                <div class="col-md-12" style="font-family: Arial, Helvetica, sans-serif;">
+                    <h3>According to our calculation we can predict that you are <span style="color:blue;">{{result}}</span> person</h3>
+                </div>
+            <!-- </div>
+        </main> -->
+        <br>
+        <main role="main" class="container">
+            <div class="content-section">
+                <div class="col-md-12" style="text-align: center;font-family: Arial, Helvetica, sans-serif;">
+                    <p>You can track your personality or read more about your personality by register an account in this page, <a href="{% url 'user-registration' %}"> click here </a> to register an account!</p>
+                </div>
+            </div>
+        </main>
+    </body>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+{% endblock %}
+

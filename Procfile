@@ -1,0 +1,1 @@
+web: gunicorn personality_check.wsgi

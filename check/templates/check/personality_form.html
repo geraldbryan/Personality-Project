@@ -1,0 +1,19 @@
+{% extends "check/base.html" %}
+
+{% block content %}
+<br>
+<br>
+    <h1> Personality Test Questions </h1>
+    <form action="" method="POST">
+        <br>
+        {% csrf_token %}
+        {{ form.as_p}}
+        <input class="btn btn-sm btn-primary" type="submit" name="Submit" />
+     </form>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+{% endblock content %}
