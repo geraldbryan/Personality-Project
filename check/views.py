@@ -11,7 +11,7 @@ from .forms import *
 from .models import *
 from django.views.generic import ListView
 
-with open(r'Model\personality_model.pkl', 'rb') as f:
+with open(r'personality_check\Model\personality_model.pkl', 'rb') as f:
     model = pickle.load(f)
 
 def register(request):
