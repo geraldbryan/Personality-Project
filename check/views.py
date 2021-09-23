@@ -10,8 +10,13 @@ import pickle
 from .forms import *
 from .models import *
 from django.views.generic import ListView
+import os
+from django.conf import settings
 
-with open(r'personality_check\Model\personality_model.pkl', 'rb') as f:
+
+file_path = os.path.join(settings.MODEL_ROOT, 'personality_model.pkl')
+
+with open(file_path, 'r+b') as f:
     model = pickle.load(f)
 
 def register(request):

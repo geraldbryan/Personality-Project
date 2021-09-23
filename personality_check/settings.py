@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.Model',
     "crispy_forms",
 ]
 
@@ -133,5 +134,8 @@ STATIC_ROOT = os.path.join(BASE_DIR,"staticfiles")
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 LOGIN_REDIRECT_URL = 'personality-form'
+
+MODEL_ROOT = os.path.join(BASE_DIR, 'Model')
+MODEL_URL = '/model/'
 
 
