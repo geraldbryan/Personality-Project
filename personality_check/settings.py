@@ -12,7 +12,6 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 
 from pathlib import Path
 import os
-import django_heroku
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -25,7 +24,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'django-insecure-&$chp--8$(s6u$#=&l$uo8(#(v%c28re$w29n!oa-^^^jx9=6t'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['127.0.0.1','personalitytestapp.herokuapp.com']
 
@@ -137,6 +136,3 @@ LOGIN_REDIRECT_URL = 'personality-form'
 
 MODEL_ROOT = os.path.join(BASE_DIR, 'Model')
 MODEL_URL = '/model/'
-
-django_heroku(locals())
-
